@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,68 +33,63 @@
         </ul>
 
     </header>
-    <!------Home section----->
-    <main class="container">
-        <p>Hello 👋 I'm</p>
-        <section class="animation">
-            <div class="first">
-                <div>SAGHRO AYOUB</div>
+    <section class="services">
+        <div class="heading">
+            <h5>Creative Service</h5>
+            <h2>Service I offer you </h2>
+            <p>Experiences that keep your customers coming back for mor information about services Makes best effort
+            </p>
+        </div>
+
+        <div class="services-content">
+            <div class="box">
+                <i class='bx bx-mobile-alt'></i>
+                <h3>Web Design</h3>
+                <p>Experiences that keep your customers coming back for mor information about <br> services Makes best effort
+                </p>
             </div>
-            <div class="second">
-                <div>Web Developer</div>
+            <div class="box">
+                <i class='bx bxs-camera'></i>
+                <h3>Web Design</h3>
+                <p>Experiences that keep your customers coming back for mor information about <br> services Makes best effort
+                </p>
             </div>
-            <div class="third">
-                <div>Web Designer</div>
+            <div class="box">
+                <i class='bx bx-landscape'></i>
+                <h3>Web Design</h3>
+                <p>Experiences that keep your customers coming back for mor information about <br> services Makes best effort
+                </p>
             </div>
-        </section>
-    </main>
-    </section>
-    <section class="contact" id="contact">
-        <h2> Subscribe for more html css tutorial</h2>
-        <div class="newslatter">
-            <input type="text" placeholder="Enter your Name">
-            <a href="#" class="cta"> Subscribe</a>
+            <div class="box">
+                <i class='bx bx-laptop'></i>
+                <h3>Web Design</h3>
+                <p>Experiences that keep your customers coming back for mor information about <br> services Makes best effort
+                </p>
+            </div>
+            <div class="box">
+                <i class='bx bx-line-chart'></i>
+                <h3>Web Design</h3>
+                <p>Experiences that keep your customers coming back for mor information about <br> services Makes best effort
+                </p>
+            </div>
+            <div class="box">
+                <i class='bx bx-layer'></i>
+                <h3>Web Design</h3>
+                <p>Experiences that keep your customers coming back for mor information about <br> services Makes best effort
+                </p>
+            </div>
         </div>
 
     </section>
-    <!----  copyright----->
     <div class="copyright">
         <p> ©2023 all rights reserved | Design & Develop by SAGHRO AYOUB!</p>
         <div class="icon">
             <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.linkedin.com/in/ayoub-saghro-1652ba228/" target="_blank"><i class='bx bxl-linkedin'></i></a>
             <a href="#"><i class='bx bxl-github'></i></a>
             <a href="#"><i class='bx bxl-instagram'></i></a>
         </div>
     </div>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        let menu = document.querySelector('#menu-icon');
-        let navv = document.querySelector('.nav');
-
-        menu.onclick = () => {
-            menu.classList.toggle('bx-x');
-            navv.classList.toggle('active');
-
-        };
-        window.onscroll = () => {
-            menu.classList.remove('bx-x');
-            navv.classList.remove('active');
-        }
-        const sr = ScrollReveal({
-            distance: '40px',
-            duration: 2600,
-            reset: true
-        })
-        sr.reveal('.txt-hm', {
-            delay: 300,
-            origin: 'left'
-        })
-        sr.reveal('.about,.services,.portfolio,.blog,.contact.copyright', {
-            delay: 100,
-            origin: 'bottom'
-        })
-    </script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -34,32 +35,19 @@
         </ul>
 
     </header>
-    <!------Home section----->
-    <main class="container">
-        <p>Hello 👋 I'm</p>
-        <section class="animation">
-            <div class="first">
-                <div>SAGHRO AYOUB</div>
-            </div>
-            <div class="second">
-                <div>Web Developer</div>
-            </div>
-            <div class="third">
-                <div>Web Designer</div>
-            </div>
-        </section>
-    </main>
-    </section>
-    <section class="contact" id="contact">
-        <h2> Subscribe for more html css tutorial</h2>
-        <div class="newslatter">
-            <input type="text" placeholder="Enter your Name">
-            <a href="#" class="cta"> Subscribe</a>
+    <section class="about">
+        <div class="abt-img">
+            <img src="ab.png" alt="">
+        </div>
+        <div class="abt-text">
+            <h2>About Me</h2>
+            <h5>developer <span>& Designer</span></h5>
+            <p>I am a creative designer and developer, who aims to work with small businesses and marginalized communities to bring their passions to life. I offer both design and development services of web applications or websites!</p>
+            <a href="#" class="btn">Download CV</a>
         </div>
 
     </section>
-    <!----  copyright----->
-    <div class="copyright">
+    <div class="copyrightt">
         <p> ©2023 all rights reserved | Design & Develop by SAGHRO AYOUB!</p>
         <div class="icon">
             <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -68,34 +56,6 @@
             <a href="#"><i class='bx bxl-instagram'></i></a>
         </div>
     </div>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        let menu = document.querySelector('#menu-icon');
-        let navv = document.querySelector('.nav');
-
-        menu.onclick = () => {
-            menu.classList.toggle('bx-x');
-            navv.classList.toggle('active');
-
-        };
-        window.onscroll = () => {
-            menu.classList.remove('bx-x');
-            navv.classList.remove('active');
-        }
-        const sr = ScrollReveal({
-            distance: '40px',
-            duration: 2600,
-            reset: true
-        })
-        sr.reveal('.txt-hm', {
-            delay: 300,
-            origin: 'left'
-        })
-        sr.reveal('.about,.services,.portfolio,.blog,.contact.copyright', {
-            delay: 100,
-            origin: 'bottom'
-        })
-    </script>
 </body>
 
 </html>

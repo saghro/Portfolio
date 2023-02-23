@@ -25,7 +25,7 @@
 
         <div class="bx bx-menu" id="menu-icon"></div>
         <ul class="nav">
-            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="./index.html">Home</a> </li>
             <li><a href="./Home.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
@@ -34,31 +34,34 @@
         </ul>
 
     </header>
-    <!------Home section----->
-    <main class="container">
-        <p>Hello 👋 I'm</p>
-        <section class="animation">
-            <div class="first">
-                <div>SAGHRO AYOUB</div>
-            </div>
-            <div class="second">
-                <div>Web Developer</div>
-            </div>
-            <div class="third">
-                <div>Web Designer</div>
-            </div>
-        </section>
-    </main>
-    </section>
-    <section class="contact" id="contact">
-        <h2> Subscribe for more html css tutorial</h2>
-        <div class="newslatter">
-            <input type="text" placeholder="Enter your Name">
-            <a href="#" class="cta"> Subscribe</a>
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h5>Creative Portfolio</h5>
+            <h2>Solution we offer you </h2>
+            <p>Experiences that keep your customers coming back for mor information about services Makes best effort
+            </p>
         </div>
-
+        <div class="portfolio-content">
+            <div class="col">
+                <img src="developer.jpg" alt="">
+                <div class="layer">
+                    <h3>Web Bussiness Plan</h3>
+                </div>
+            </div>
+            <div class="col">
+                <img src="designer.jpg" alt="">
+                <div class="layer">
+                    <h3>Web Bussiness Plan</h3>
+                </div>
+            </div>
+            <div class="col">
+                <img src="dv.jpg" alt="">
+                <div class="layer">
+                    <h3>Web Bussiness Plan</h3>
+                </div>
+            </div>
+        </div>
     </section>
-    <!----  copyright----->
     <div class="copyright">
         <p> ©2023 all rights reserved | Design & Develop by SAGHRO AYOUB!</p>
         <div class="icon">
@@ -68,34 +71,6 @@
             <a href="#"><i class='bx bxl-instagram'></i></a>
         </div>
     </div>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        let menu = document.querySelector('#menu-icon');
-        let navv = document.querySelector('.nav');
-
-        menu.onclick = () => {
-            menu.classList.toggle('bx-x');
-            navv.classList.toggle('active');
-
-        };
-        window.onscroll = () => {
-            menu.classList.remove('bx-x');
-            navv.classList.remove('active');
-        }
-        const sr = ScrollReveal({
-            distance: '40px',
-            duration: 2600,
-            reset: true
-        })
-        sr.reveal('.txt-hm', {
-            delay: 300,
-            origin: 'left'
-        })
-        sr.reveal('.about,.services,.portfolio,.blog,.contact.copyright', {
-            delay: 100,
-            origin: 'bottom'
-        })
-    </script>
 </body>
 
 </html>
