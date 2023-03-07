@@ -69,33 +69,7 @@
         </div>
     </div>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        let menu = document.querySelector('#menu-icon');
-        let navv = document.querySelector('.nav');
 
-        menu.onclick = () => {
-            menu.classList.toggle('bx-x');
-            navv.classList.toggle('active');
-
-        };
-        window.onscroll = () => {
-            menu.classList.remove('bx-x');
-            navv.classList.remove('active');
-        }
-        const sr = ScrollReveal({
-            distance: '40px',
-            duration: 2600,
-            reset: true
-        })
-        sr.reveal('.txt-hm', {
-            delay: 300,
-            origin: 'left'
-        })
-        sr.reveal('.about,.services,.portfolio,.blog,.contact.copyright', {
-            delay: 100,
-            origin: 'bottom'
-        })
-    </script>
 </body>
 
 </html>
